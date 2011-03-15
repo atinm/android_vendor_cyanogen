@@ -32,8 +32,12 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.ril.emc.mode=2
 
 # Add additional mounts
+#PRODUCT_PROPERTY_OVERRIDES += \
+#    ro.additionalmounts=/mnt/emmc
+
+# Add removable mounts
 PRODUCT_PROPERTY_OVERRIDES += \
-    removablemounts=/mnt/emmc
+    ro.removablemounts=/mnt/emmc
 
 #
 # Set ro.modversion
